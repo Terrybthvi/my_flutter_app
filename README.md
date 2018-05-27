@@ -1,4 +1,5 @@
 # Flutter从入门到实战
+![Mon icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/ezgif.com-video-to-gif.gif)
 ## Flutter概述
 　　Flutter是一款移动应用程序SDK，一份代码可以同时生成iOS和Android两个高性能、高保真的应用程序。
 　　Flutter目标是使开发人员能够交付在不同平台上都感觉自然流畅的高性能应用程序。我们兼容滚动行为、排版、图标等方面的差异。
@@ -85,11 +86,90 @@
 ![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/9A0FBA3D-9D4E-4900-9CFD-8D5D02B3696D.png)  
 点击我们创建一个新的Flutter程序  
 ![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/CF5EF84A-2502-461F-8379-7FECDC1FBA92.png)  
-![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/8B259C1A-1E42-4C18-98E0-506960B7E5FA.jpeg)
-
+![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/8B259C1A-1E42-4C18-98E0-506960B7E5FA.jpeg)  
 我们创建完进入编辑界面后，我们可以看到主要有４块区域:  
 １、工程文件目录.  
 ２、构建区域在这里可以选择，运行IOS Android 模拟器。
 ![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/69FD643E-BEAA-4B22-8E2B-A8289807B1DE.png)
 ３、Flutter 程序当前页面的组件树，Flutter 程序的核心原则是`一切都是组件(Widget)`，所以他的所有都是组件。  
 ４、dart语法分析，我们通过前面的介绍知道，Flutter程序是通过dart语言来写的。
+
+这样创建完成之后，我们会看到`lib`目录下有一个`main.dart`文件，这个就是源代码：
+
+    import 'package:flutter/material.dart';
+    
+    void main() => runApp(new MyApp());
+    
+    class MyApp extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
+        return new MaterialApp(
+          title: 'Flutter Demo',
+          theme: new ThemeData(
+        
+            primarySwatch: Colors.blue,
+          ),
+          home: new MyHomePage(title: 'Flutter Demo Home Page'),
+        );
+      }
+    }
+    
+    class MyHomePage extends StatefulWidget {
+      MyHomePage({Key key, this.title}) : super(key: key);
+    
+      final String title;
+    
+      @override
+      _MyHomePageState createState() => new _MyHomePageState();
+    }
+    
+    class _MyHomePageState extends State<MyHomePage> {
+      int _counter = 0;
+    
+      void _incrementCounter() {
+        setState(() {
+          _counter++;
+        });
+      }
+    
+      @override
+      Widget build(BuildContext context) {
+        return new Scaffold(
+          appBar: new AppBar(
+            title: new Text(widget.title),
+          ),
+          body: new Center(
+            child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new Text(
+                  'You have pushed the button this many times:',
+                ),
+                new Text(
+                  '$_counter',
+                  style: Theme.of(context).textTheme.display1,
+                ),
+              ],
+            ),
+          ),
+          floatingActionButton: new FloatingActionButton(
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: new Icon(Icons.add),
+          ), 
+        );
+      }
+    }
+    
+这段代码其实很简单，首先我们看到`main()`函数调用了`runAPP()`,这里简单说下
+    
+    runApp函数接受指定的控件(Widget)，并使其作为控件树(widget tree)的根控件。
+
+runAPP的入参是下面定义的MyAPP,在MyAPP里面创建了`_MyHomePageState`的对象作为首页，我们可以看到下面`_MyHomePageState`里面定义了中间是两个个Text ，底部是一个floatingActionButton。关于dart的语法后续文章详细说明，这里就简单了解一下这个demo：就是点击一次下面的悬浮按钮，中间的数字会加１。
+完了之后我们就可以运行，根据上面的介绍我们选择模拟器运行,如下图所示：
+![Mon icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/ezgif.com-video-to-gif.gif)
+## 小结
+总的来说Flutter入门还是非常简单的，dart语法也比较容易上手，个人觉得是一项非常不错的技术。以上如有哪些写的不对的地方欢迎指正。最后附上几个Flutter学习的相关链接
+[flutter官网](https://flutter.io/setup-macos/)  
+[flutter中文开发者论坛](http://flutter-dev.cn/)  
+[dart中文社区](https://www.dart-china.org/)
