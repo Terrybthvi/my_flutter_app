@@ -169,7 +169,7 @@ runAPP的入参是下面定义的MyAPP,在MyAPP里面创建了`_MyHomePageState`
 完了之后我们就可以运行，根据上面的介绍我们选择模拟器运行,如下图所示：
 ![Mon icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/ezgif.com-video-to-gif.gif)
 ## 小结
-总的来说Flutter入门还是非常简单的，dart语法也比较容易上手，个人觉得是一项非常不错的技术。以上如有哪些写的不对的地方欢迎指正。最后附上几个Flutter学习的相关链接
+总的来说Flutter入门还是非常简单的，dart语法也比较容易上手，个人觉得是一项非常不错的技术。以上如有哪些写的不对的地方欢迎指正。最后附上几个Flutter学习的相关链接   
 [flutter官网](https://flutter.io/setup-macos/)  
 [flutter中文开发者论坛](http://flutter-dev.cn/)  
 [dart中文社区](https://www.dart-china.org/)
