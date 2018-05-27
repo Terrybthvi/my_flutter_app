@@ -166,7 +166,7 @@
     runApp函数接受指定的控件(Widget)，并使其作为控件树(widget tree)的根控件。
 
 runAPP的入参是下面定义的MyAPP,在MyAPP里面创建了`_MyHomePageState`的对象作为首页，我们可以看到下面`_MyHomePageState`里面定义了中间是两个个Text ，底部是一个floatingActionButton。关于dart的语法后续文章详细说明，这里就简单了解一下这个demo：就是点击一次下面的悬浮按钮，中间的数字会加１。
-完了之后我们就可以运行，根据上面的介绍我们选择模拟器运行,如下图所示：
+完了之后我们就可以运行，根据上面的介绍我们选择模拟器运行,如下图所示：  
 ![Mon icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/ezgif.com-video-to-gif.gif)
 ## 小结
 总的来说Flutter入门还是非常简单的，dart语法也比较容易上手，个人觉得是一项非常不错的技术。以上如有哪些写的不对的地方欢迎指正。最后附上几个Flutter学习的相关链接   
