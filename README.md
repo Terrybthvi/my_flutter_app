@@ -80,4 +80,16 @@
     $ pip install six
 
 ##  Flutter实战
-前面介绍了好多可能大家没啥概念，光说不练假把式，下面我们就来构建一个简单的Flutter工程
+前面介绍了好多可能大家没啥概念，光说不练假把式，下面我们就来构建一个简单的Flutter工程。  
+如果我们Android Studio 安装了Flutter插件，那么我们打开Android Studio 的时候会看到如下图所示有，第二行多了一个`start a new Flutter project`
+![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/9A0FBA3D-9D4E-4900-9CFD-8D5D02B3696D.png)  
+点击我们创建一个新的Flutter程序  
+![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/CF5EF84A-2502-461F-8379-7FECDC1FBA92.png)  
+![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/8B259C1A-1E42-4C18-98E0-506960B7E5FA.jpeg)
+
+我们创建完进入编辑界面后，我们可以看到主要有４块区域:  
+１、工程文件目录.  
+２、构建区域在这里可以选择，运行IOS Android 模拟器。
+![Mou icon](https://github.com/Terrybthvi/my_flutter_app/blob/master/69FD643E-BEAA-4B22-8E2B-A8289807B1DE.png)
+３、Flutter 程序当前页面的组件树，Flutter 程序的核心原则是`一切都是组件(Widget)`，所以他的所有都是组件。  
+４、dart语法分析，我们通过前面的介绍知道，Flutter程序是通过dart语言来写的。
